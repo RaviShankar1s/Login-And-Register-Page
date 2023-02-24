@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN AND REGISTER PAGE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+
+        <div class="vivo">
+            <div class="form-boxs">
+                <div class="button-boxs">
+                    <div id="btns"></div>
+                  <button type="button" class="toggle-btns" onclick="login()">Log In</button>
+                  <button type="button" class="toggle-btns" onclick="register()">Register</button>
+                </div> 
+                
+                
+                <form action="login.php" method="post" id="login" class="input-groups">
+                    
+                    <label for="name"><i class="bi bi-person"></i> Username</label>
+                    <input type="text" class="input-fields" id="username" name="username" placeholder="Enter Username"
+                    required>
+                    <label for="password"><i class="bi bi-key"></i> Password</label>
+                    <input type="password" class="input-fields" id="password" name="password" placeholder="Enter Password"
+                    required>
+                    <input type="checkbox" class="check-boxs"><span class="agree">Remember Password</span>
+                    <button type="submit" class="submit-btns">Login In</button>
+                </form>
+                <form action="login.php" method="post" id="register" class="input-groups">
+                    <label for="name"><i class="bi bi-person"></i> Username</label>
+                    <input type="text" class="input-fields" id="username" name="username" placeholder="Username"
+                    required>
+                    <label for="password"><i class="bi bi-envelope"></i> Email Id</label>
+                    <input type="email" class="input-fields" id="email" name="email" placeholder="Enter Email Id"
+                    required>
+                    <label for="password"><i class="bi bi-key"></i> Password</label>
+                    <input type="password" class="input-fields" id="password" name="password" placeholder="Enter Password"
+                    required>
+                    <label for="password"><i class="bi bi-lock"></i> Confirm Password</label>
+                    <input type="password" class="input-fields" id="cpassword" name="cpassword" placeholder="Enter Confirm Password"
+                    required>
+
+                    <input type="checkbox" class="check-boxs"><span class="agree">I agree to the terms & 
+                        conditions</span>
+                    <button type="submit" class="submit-btns">Register</button>
+                </form>
+            </div>
+            <footer>
+                <div class="center">
+                     The RaHi Technologies.
+                </div>
+            </footer>
+        </div>
+        
+
+        <script src="js/resp.js"></script>
+
+</body>
+</html>
